@@ -1,7 +1,7 @@
 # https://habrahabr.ru/post/246437/
 from copy import deepcopy
 import sys
-# sys.stdin = open('in2.txt', 'r')
+sys.stdin = open('in4.txt', 'r')
 INF = 10**6
 CUT = '-'
 
@@ -31,8 +31,10 @@ def min_in_column(g, column):
     if m == INF+1: m = None # is cut string
     return m
 def print_matrix(matrix, title = ''):
+    pretty = lambda x: 'INF' if type(x) == int and x > INF//2 else x
     print(title)
-    for it in matrix: print(it)
+    for it in matrix:
+        print(list(map(pretty, it)))
     print('\n')
     
 ############
