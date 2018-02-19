@@ -1,2 +1,2 @@
 # Algorithms
-## I have collected some algorithms, data structures and so on, just in case
+## I collect some algorithms, data structures and so on.
